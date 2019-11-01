@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using AdminLTE.Models;
-using AdminLTE.Models.SuperAdminViewModels;
 using AdminLTE.Data;
 
 namespace AdminLTE.Controllers

@@ -16,7 +16,6 @@ using Microsoft.Extensions.Logging;
 using AdminLTE.Models;
 using AdminLTE.Common;
 
-
 namespace AdminLTE.Data
 {
     public static class DataSeed
@@ -27,6 +26,9 @@ namespace AdminLTE.Data
 
             using (IServiceScope scope = scopeFactory.CreateScope())
             {
+                var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                context.Database.Migrate();
+
                 UserManager<ApplicationUser> _userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                 RoleManager<IdentityRole> roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
@@ -37,7 +39,7 @@ namespace AdminLTE.Data
                 string firstName = "Super";
                 string lastName = "Admin";
                 string email = "superadmin@admin.com";
-                string password = "Qwaszx123$";
+                string password = "P@ssw0rd";
                 string role = "SuperAdmins";
                 string role2 = "SeniorManagers";
                 string role3 = "Managers";

@@ -68,8 +68,9 @@ namespace AdminLTE.Controllers
             IdentityRole role = await roleManager.FindByIdAsync(id);
             List<ApplicationUser> members = new List<ApplicationUser>();
             List<ApplicationUser> nonMember = new List<ApplicationUser>();
+            var users = userManager.Users.ToList<ApplicationUser>();
 
-            foreach (ApplicationUser user in userManager.Users)
+            foreach (ApplicationUser user in users)
             {
                 var list = await userManager.IsInRoleAsync(user, role.Name)
                     ? members

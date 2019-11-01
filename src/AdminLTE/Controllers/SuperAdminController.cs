@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using AdminLTE.Models;
-using AdminLTE.Models.SuperAdminViewModels;
+using AdminLTE.Models.AccountViewModels;
 
 namespace AdminLTE.Controllers
 {
@@ -49,7 +49,7 @@ namespace AdminLTE.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(CreateVm createVm)
+        public async Task<IActionResult> Create(RegisterViewModel createVm)
         {
             if (ModelState.IsValid)
             {
