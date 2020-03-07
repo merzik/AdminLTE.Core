@@ -3,15 +3,15 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "twitter-bootstrap@4.3.1",
+      "library": "twitter-bootstrap@4.4.1",
       "destination": "wwwroot/lib/bootstrap/"
     },
     {
-      "library": "jquery@3.4.0",
+      "library": "jquery@3.4.1",
       "destination": "wwwroot/lib/jquery/"
     },
     {
-      "library": "jquery-validate@1.19.0",
+      "library": "jquery-validate@1.19.1",
       "destination": "wwwroot/lib/jquery-validation/"
     },
     {
@@ -23,7 +23,7 @@
       "destination": "wwwroot/lib/datatables/"
     },
     {
-      "library": "ionicons@4.5.5",
+      "library": "ionicons@4.5.6",
       "destination": "wwwroot/lib/ionicons/"
     },
     {
@@ -35,7 +35,7 @@
       "destination": "wwwroot/lib/fastclick/"
     },
     {
-      "library": "font-awesome@5.11.2",
+      "library": "font-awesome@5.12.1",
       "destination": "wwwroot/lib/font-awesome/"
     }
   ,
